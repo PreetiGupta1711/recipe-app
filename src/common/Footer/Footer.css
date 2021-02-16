@@ -1,0 +1,50 @@
+#footer {
+    background-color: rgb(51, 51,51);
+    font-family: 'DINBold';
+    padding: 40px 0;
+}
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.section-title {
+    color: rgb(255,218,201);
+    font-size: 20px;
+}
+.subsection{
+    color:rgb(148, 148,148);
+    font-family: 'GillSans';
+}
+.copyright-text {
+    color: rgb(148, 148,148);
+    font-family: 'GillSans';
+}
+.footer-upper-section {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-lower-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+.section-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 23%;
+    line-height: 1.8;
+}
+#footer-sections {
+    display: flex;
+}
+.footer-size-med{
+    font-size: 3rem;
+}
+.footer-size-lrg{
+    font-size: 6rem;
+}
+.footer-size-med::after, .footer-size-lrg::after{
+    content: "\a";
+    white-space: pre;
+}

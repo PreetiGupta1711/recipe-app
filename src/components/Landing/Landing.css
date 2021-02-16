@@ -1,0 +1,47 @@
+#landing {
+    background-image: url('../../assets/bg-pic.png');
+    background-size: auto;
+    height: 100vh;
+    position: relative;
+}
+
+.landing-logo {
+    width: 10%;
+    position: absolute;
+    top: 128px;
+    left: 278px;
+}
+
+/* .landing-logo-img {
+
+} */
+
+.landing-center-text {
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    text-align: center;
+}
+
+.landing-text {
+    color:#fff;
+    font-weight: 600;
+    font-family: 'DINBold';
+    line-height: 0.9;
+}
+
+.landing-size-med {
+    font-size: 5rem;
+}
+
+.landing-size-lrg {
+    font-size: 7rem;
+}
+
+.landing-size-sml {
+    font-size: 2rem;
+}
+.landing-size-med::after, .landing-size-lrg::after{
+    content: "\a";
+    white-space: pre;
+}

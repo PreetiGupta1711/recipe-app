@@ -1,0 +1,23 @@
+#header {
+    position: fixed;
+}
+.MuiAppBar-colorPrimary {
+    color: rgb(37, 34, 34)!important;
+    background-color: transparent!important;
+}
+.MuiAppBar-positionStatic {
+    position: fixed!important;
+}
+.MuiPaper-elevation4 {
+    box-shadow: none!important;
+}
+.font-bold{
+    font-family: 'DINBold';
+}
+span.header-logo {
+    font-size: 30px;
+}
+.menu-item {
+    margin-left: 30px;
+    font-size: 20px;
+}
