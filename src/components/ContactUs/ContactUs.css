@@ -1,0 +1,84 @@
+.Contact-us{
+  background-color: rgb(255, 218, 201);
+  position: relative;
+}
+.Contact-us-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 100px 0;
+  align-items: center;
+}
+.collaborate-container {
+  width: 50%;
+}
+.collaborate-form-container {
+  width: 50%;
+}
+.collaborate-title-sm::after, .collaborate-title-lg::after{
+  content: "\a";
+  white-space: pre;
+}
+.collaborate-context {
+  width: 60%;
+}
+.collaborate-title {
+  font-family: 'DINBold';
+  line-height: 0.9;
+}
+.collaborate-title-sm {
+  font-size: 2.3rem;
+}
+.collaborate-title-lg {
+  font-size: 4rem;
+  /* text-decoration: line-through;
+  text-decoration-color: #fff; */
+}
+form#contactUs-form {
+  display: flex;
+}
+.formdetailbg {
+  position: absolute;
+  top: 7px;
+  right: 30rem;
+}
+
+/* -----form ------- */
+
+label#standard-required-label,label.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink {
+    font-family: 'DINBold';
+    font-size: 20px;
+    color: #000;
+}
+label + .MuiInput-formControl {
+  margin-top: 22px!important;
+}
+.MuiInputBase-input {
+  font-size: 13px!important;
+  color: lightslategray;
+}
+em {
+  font-style: inherit;
+}
+.form-field-section {
+  margin-left: 13px;
+  width: 100%;
+}
+.MuiFormControl-root.MuiTextField-root {
+  width: 96%!important;
+}
+.makeStyles-formControl-5 {
+  margin: 8px;
+  min-width: 120px;
+  width: 96%!important;
+}
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.send-btn {
+  margin-top: 25px;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  font-family: 'DINBold';
+  background-color: rgb(51, 51,51);
+  float: right;
+}
