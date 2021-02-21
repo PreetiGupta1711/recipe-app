@@ -1,0 +1,13 @@
+span.menu-category-title {
+  font-family: 'DINBold';
+}
+.OurMenu-section-category {
+  max-width: 230px;
+}
+.menu-category {
+  margin: 40px 0;
+}
+.menu-category-price {
+  padding: 5px;
+  border: 3px solid rgb(255, 218, 201);
+}
