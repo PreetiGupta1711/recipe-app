@@ -1,0 +1,69 @@
+.community-title::after, .community-title::after{
+  content: "\a";
+  white-space: pre;
+}
+.community-section {
+  margin: 100px 0;
+}
+.community-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.community-title-container {
+  font-family: 'DINBold';
+}
+.community-title {
+  font-size: 4rem;
+  line-height: 0.9;
+}
+.community-body-container {
+  padding-top: 130px;
+}
+.community-title-container {
+  font-family: 'DINBold';
+  position: absolute;
+  left: 30%;
+}
+.community-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  position: relative;
+}
+.card-holder {
+  display: flex;
+  position: relative;
+}
+.card-back {
+  background-image: url("../../assets/detail01.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+.plus-bg {
+  position: absolute;
+  z-index: 1;
+  bottom: -26px;
+  left: 32%;
+}
+.dot-bg {
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  left: 15%;
+}
+.community-title-subtext {
+  font-family: 'DINBold';
+  font-size: 26px;
+  text-transform: uppercase;
+}
+.card-text-holder {
+  position: relative;
+  display: flex;
+}
+.community-title-sidetext {
+  width: 40%;
+  padding: 25px;
+}

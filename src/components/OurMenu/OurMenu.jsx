@@ -12,7 +12,7 @@ const OurMenu = () => {
     <section className="OurMenu-section">
       <div className="OurMenu-section-container">
         <div className="OurMenu-section-header">
-          <span className="OurMenu-title">OUR MENU</span>
+          <span className="OurMenu-title"  style={{background: "linear-gradient( 180deg, rgba(0,0,0,0) calc(50% - 5px), rgba(255, 218, 201,1) calc(50%), rgba(0,0,0,0) calc(50% + 5px) )"}}>OUR MENU</span>
           <Button variant="contained" className="know-more-btn">KNOW MORE</Button>
         </div>
 

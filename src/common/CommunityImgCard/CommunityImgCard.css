@@ -1,0 +1,12 @@
+.CommunityImgCard {
+  width: 240px;
+  position: relative;
+  z-index: 2;
+}
+.insta-tag {
+  position: absolute;
+  right: 0;
+}
+.MuiCardContent-root:last-child {
+  padding-bottom: 16px!important;
+}

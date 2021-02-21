@@ -1,0 +1,23 @@
+.card-comment , .card-likes{
+  display: flex;
+}
+.card-likes {
+  margin-left: 20px;
+}
+.card-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.card-title {
+  font-size: 22px;
+  font-family: 'DINBold';
+}
+.CommunityTextCard {
+  width: 260px;
+  margin: 0 24px;
+  z-index: 2;
+}
