@@ -24,7 +24,7 @@ const Community = () => {
 
         <div className="community-body-container">
 
-          <div className="community-card-container">
+          <div className="community-card-container" data-aos="fade-up">
             <div className="card-text-holder">
             </div>
             <div className="card-holder card-back">
@@ -39,7 +39,7 @@ const Community = () => {
             </div>
           </div>
 
-          <div className="community-card-container">
+          <div className="community-card-container" data-aos="fade-up">
             <div className="card-holder">
             <img className="dot-bg" src={dotteddetailbg} alt="Dot background" />
               <CommunityTextCard
@@ -57,7 +57,7 @@ const Community = () => {
             </div>
           </div>
 
-          <div className="community-card-container">
+          <div className="community-card-container" data-aos="fade-up">
             <div className="card-text-holder">
             {/* <div className="blank-div"></div> */}
               <span className="community-title-sidetext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

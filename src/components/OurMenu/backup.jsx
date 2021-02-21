@@ -6,9 +6,11 @@ import 'aos/dist/aos.css';
 import './OurMenu.css';
 
 const OurMenu = () => {
+  // ..
   AOS.init();
   return (
-    <section className="OurMenu-section-container">
+    <section className="OurMenu-section">
+      <div className="OurMenu-section-container">
         <div className="OurMenu-section-header">
           <span className="OurMenu-title"  style={{background: "linear-gradient( 180deg, rgba(0,0,0,0) calc(50% - 5px), rgba(255, 218, 201,1) calc(50%), rgba(0,0,0,0) calc(50% + 5px) )"}}>OUR MENU</span>
           <Button variant="contained" className="know-more-btn">KNOW MORE</Button>
@@ -16,7 +18,7 @@ const OurMenu = () => {
 
         <div className="OurMenu-section-body">
 
-          <div className="OurMenu-section-category" style={{border: '0'}}  data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <div className="OurMenu-section-category">
             <div className="OurMenu-category-title">
               <span className="category-title OurMenu-title">STARTERS</span>
             </div>
@@ -32,7 +34,7 @@ const OurMenu = () => {
             </div>
           </div>
 
-          <div className="OurMenu-section-category" style={{paddingTop: '300px'}}  data-aos="fade-down" data-aos-anchor-placement="center-bottom">
+          <div className="OurMenu-section-category">
             <div className="OurMenu-category-title">
               <span className="category-title OurMenu-title">MAIN <br /> COURSES</span>
             </div>
@@ -48,7 +50,7 @@ const OurMenu = () => {
             </div>
           </div>
 
-          <div className="OurMenu-section-category" style={{paddingTop: '250px'}}  data-aos="fade-up" data-aos-anchor-placement="top-center" >
+          <div className="OurMenu-section-category">
             <div className="OurMenu-category-title">
               <span className="category-title OurMenu-title">SIDES</span>
             </div>
@@ -64,7 +66,7 @@ const OurMenu = () => {
             </div>
           </div>
 
-          <div className="OurMenu-section-category"  style={{paddingTop: '170px'}} data-aos="fade-down"  data-aos-anchor-placement="center-bottom">
+          <div className="OurMenu-section-category">
             <div className="OurMenu-category-title">
               <span className="category-title OurMenu-title">DESSERTS</span>
             </div>
@@ -81,6 +83,7 @@ const OurMenu = () => {
           </div>
 
         </div>
+      </div>
     </section>
   );
 }

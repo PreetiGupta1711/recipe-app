@@ -3,6 +3,8 @@ span.menu-category-title {
 }
 .OurMenu-section-category {
   max-width: 230px;
+  border-left: 1px solid #ccc;
+  padding: 120px 0 70px;
 }
 .menu-category {
   margin: 40px 0;
