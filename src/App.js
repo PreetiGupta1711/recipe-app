@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './common/Header';
+import InfoTab from "./common/InfoTab";
 import Landing from './components/Landing';
 import Community from './components/Community';
 import Location from './components/Location';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="main">
       <Header />
+      <InfoTab />
       <Landing />
       <Community />
       <Location />

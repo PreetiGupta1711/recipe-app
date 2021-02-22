@@ -1,0 +1,16 @@
+.vertical-tab {
+  position: fixed;
+  font-size: 20px;
+  padding: 12px;
+  font-family: 'DINBold';
+  top: 50%;
+  right: 0;
+  background-color: #fff;
+  z-index: 2;
+  transform: rotate(270deg);
+  box-shadow: 2px 3px 3px #888888;
+}
+
+.vertical-tab-text {
+
+}
