@@ -6,11 +6,11 @@ import Community from './components/Community';
 import Location from './components/Location';
 import OurMenu from './components/OurMenu';
 import ContactUS from './components/ContactUs';
-import Footer from './common/Footer';
+// import Footer from './common/Footer';
 
 function App() {
   return (
-    <div className="main">
+    <div className="main" id="fullPage">
       <Header />
       <InfoTab />
       <Landing />
@@ -18,7 +18,7 @@ function App() {
       <Location />
       <OurMenu />
       <ContactUS />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

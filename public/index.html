@@ -1,73 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <title>LOGO-Food App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7S47wPY4HEeNeteDMoCWxbEnZ1oYzNvQ" async></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript">
-      // When the window has finished loading create our google map below
-      google.maps.event.addDomListener(window, 'load', init);
-  
-      function init() {
-          // Basic options for a simple Google Map
-          // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-          var mapOptions = {
-              // How zoomed in you want the map to start at (always required)
-              zoom: 11,
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+  <title>LOGO-Food App</title>
+</head>
 
-              // The latitude and longitude to center the map (always required)
-              center: new google.maps.LatLng(40.6700, -73.9400), // New York
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="main" id="fullPage"></div>
+  </div>
+  <!-- <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7S47wPY4HEeNeteDMoCWxbEnZ1oYzNvQ" async></script> -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript">
+    // When the window has finished loading create our google map below
+    google.maps.event.addDomListener(window, 'load', init);
 
-              // How you would like to style the map. 
-              // This is where you would paste any style found on Snazzy Maps.
-              styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"lightness":"-100"},{"color":"#ffdac9"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffcab1"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ffcab1"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#92e1dd"}]}]
-              // styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"lightness":"-100"},{"color":"#ffdac9"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffcab1"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ffcab1"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#92e1dd"}]}]
-          };
+    function init() {
+      // Basic options for a simple Google Map
+      // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+      var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 11,
 
-          // Get the HTML DOM element that will contain your map 
-          // We are using a div with id="map" seen below in the <body>
-          var mapElement = document.getElementById('map');
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(40.6700, -73.9400), // New York
 
-          // Create the Google Map using our element and options defined above
-          var map = new google.maps.Map(mapElement, mapOptions);
+        // How you would like to style the map. 
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [{ "featureType": "all", "elementType": "geometry.fill", "stylers": [{ "lightness": "-100" }, { "color": "#ffdac9" }] }, { "featureType": "poi", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#ffcab1" }] }, { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi.park", "elementType": "geometry.fill", "stylers": [{ "color": "#ffcab1" }] }, { "featureType": "road", "elementType": "geometry", "stylers": [{ "lightness": 100 }, { "visibility": "simplified" }] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit.line", "elementType": "geometry", "stylers": [{ "visibility": "on" }, { "lightness": 700 }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#92e1dd" }] }]
+        // styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"lightness":"-100"},{"color":"#ffdac9"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffcab1"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ffcab1"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#92e1dd"}]}]
+      };
 
-          // Let's also add a marker while we're at it
-          var marker = new google.maps.Marker({
-              position: new google.maps.LatLng(40.6700, -73.9400),
-              icon: "./location-icon.png",
-              map: map,
-              title: "12 Upper St. Martin's Lane WC2H 9FB, London"
-          });
-      }
+      // Get the HTML DOM element that will contain your map 
+      // We are using a div with id="map" seen below in the <body>
+      var mapElement = document.getElementById('map');
+
+      // Create the Google Map using our element and options defined above
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      // Let's also add a marker while we're at it
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(40.6700, -73.9400),
+        icon: "./location-icon.png",
+        map: map,
+        title: "12 Upper St. Martin's Lane WC2H 9FB, London"
+      });
+    }
   </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
   <script>
-    AOS.init({
-      delay: 2000, // values from 0 to 3000, with step 50ms
-      duration: 4000,
-    });
-  </script>
-  </body>
+    // fullpage customization
+    $(document).ready(function() {
 
-  <!-- <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7S47wPY4HEeNeteDMoCWxbEnZ1oYzNvQ&callback=initMap&libraries=&v=weekly"
-  async
-></script> -->
+    $('#fullpage').fullpage({
+      sectionSelector: '.vertical-scrolling',
+      navigation: true,
+      slidesNavigation: true,
+      controlArrows: false,
+      anchors: ['aboutSection', 'communitySection', 'locationSection', 'menuSection', 'recipesSection'],
+      menu: '#menu',
+    
+      afterLoad: function(anchorLink, index) {
+        $('.fp-table.active .aos-init').addClass('aos-animate');
+        if($('#fp-nav ul li a').hasClass('active')) {
+          $('#fp-nav ul li a.active span').text('0'+index);
+        }else {
+          $('#fp-nav ul li a span').empty();
+        }
+
+      },
+    
+      onLeave: function(index, nextIndex, direction) {
+        $('#fp-nav').show();
+        $('.section [data-aos]').removeClass("aos-animate");
+        $('#fp-nav ul li a.active span').empty();
+      },
+    
+      // afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
+      //   if(anchorLink == 'recipesSection' && slideIndex == 1) {
+      //     $.fn.fullpage.setAllowScrolling(false, 'up');
+      //   }
+      //   $('#fp-nav ul li a.active span').text();
+      //   $('#fp-nav ul li a span').text();
+      //   // $('.slide.active [data-aos]').addClass("aos-animate");
+      // },
+    
+      // onSlideLeave: function( anchorLink, index, slideIndex, direction) {
+      //   if(anchorLink == 'recipesSection' && slideIndex == 1) {
+      //     $.fn.fullpage.setAllowScrolling(true, 'up');
+      //   }
+      //   $('#fp-nav ul li a.active span').text();
+      //   $('#fp-nav ul li a span').text();
+      //   // $('.slide [data-aos]').removeClass("aos-animate");
+      // } 
+    }); 
+  });
+      </script>
+</body>
 </html>

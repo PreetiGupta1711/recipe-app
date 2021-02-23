@@ -7,7 +7,7 @@ import './CommunityTextCard.css';
 
 const useStyles = makeStyles({
   root: {
-    height: 282,
+    height: 233,
     position:'relative',
   },
   bullet: {

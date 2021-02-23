@@ -1,5 +1,5 @@
 .CommunityImgCard {
-  width: 240px;
+  /* width: 240px; */
   position: relative;
   z-index: 2;
 }
@@ -9,4 +9,7 @@
 }
 .MuiCardContent-root:last-child {
   padding-bottom: 16px!important;
+}
+.img-card {
+  height: 200px;
 }

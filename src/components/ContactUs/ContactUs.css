@@ -82,3 +82,7 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.send-btn {
   background-color: rgb(51, 51,51);
   float: right;
 }
+.makeStyles-formControl-13 {
+  margin: 8px;
+  width: 96%;
+}

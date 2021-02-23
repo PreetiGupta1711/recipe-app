@@ -1,38 +1,97 @@
-/* .App {
-  text-align: center;
+.icon-up-open-big { display: inline-block; }
+
+.icon-up-open-big:after {
+  content: "a";
+  font-size: 2.5em;
+  display: block;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  color: black;
+  -webkit-transition: color .3s;
+          transition: color .3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon-up-open-big:hover:after {
+	color: white;	
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scroll-icon {
+	position: absolute;
+ 	left: 50%;
+  bottom: 30px;
+  padding: 0 10px;
+  	-webkit-transform: translateX(-50%);
+  	    -ms-transform: translateX(-50%);
+  	        transform: translateX(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
 }
 
-.App-link {
-  color: #61dafb;
+.clearfix:after {
+  clear: both;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.l-left {
+	float: left;
+}
+
+/* .l-right {
+	float: right;
 } */
+
+.end {
+	margin-top: 30px;
+	font-size: 3em;
+	font-weight: bold;
+	opacity: 0;
+	-webkit-transform: translateY(300px);
+	    -ms-transform: translateY(300px);
+	        transform: translateY(300px);
+	-webkit-transition: opacity, -webkit-transform 1s;
+	        transition: opacity, transform 1s;
+	-webkit-transition-delay: 1s;
+	        transition-delay: 1s;
+}
+
+/* SECTION STYLES - fullPage.js 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* SLIDENAV STYLES - fullPage.js 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span,#fp-nav ul li a span:hover, 
+.fp-slidesNav ul li a span:hover  {
+	background: linear-gradient(180deg, rgba(0,0,0,0) calc(50% - 2px), rgba(0,0,0,1) calc(50%), rgba(0,0,0,0) calc(50% + 2px) );
+	width: 20px;
+	height: 2px;
+	margin: -4px 0 0 -4px;
+	z-index: 10;
+	border-radius: 0;
+}
+
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+	width: 30px;
+	height: initial;
+	font-size: 18px;
+	padding-left: 8px;
+	font-family: 'DINBold';
+	margin: -8px 0 0 -8px;
+	box-sizing: border-box;
+	z-index: 10;
+	background: linear-gradient(180deg, rgba(0,0,0,0) calc(50% - 2px), rgba(0,0,0,1) calc(50%), rgba(0,0,0,0) calc(50% + 2px) );
+}
+#fp-nav.right {
+	left: 30px;
+}

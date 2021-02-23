@@ -1,11 +1,13 @@
 import ContactForm from "./ContactForm.jsx";
 import formdetailbg from "../../assets/detail02.png";
+import Footer from "../../common/Footer";
 import './ContactUs.css';
 
 const ContactUs = () => {
   
   return (
-    <section className="Contact-us">
+    <section className="vertical-scrolling" id="recipesSection">
+    <div className="Contact-us">
       <div className="Contact-us-container">
         <div className="collaborate-container">
           <div className="collaborate-title">
@@ -22,6 +24,8 @@ const ContactUs = () => {
           <ContactForm />
         </div>
       </div>
+      </div>
+      <Footer />
     </section>
   );
 }

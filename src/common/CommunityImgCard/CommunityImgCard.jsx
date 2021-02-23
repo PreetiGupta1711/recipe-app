@@ -6,7 +6,7 @@ import instalogo from "../../assets/instagram-btn.png";
 
 const useStyles = makeStyles({
   root: {
-    height: 282,
+    height: 233,
   },
   bullet: {
     display: 'inline-block',
